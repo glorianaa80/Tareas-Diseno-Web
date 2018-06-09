@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<form action="/email.php">
+	<h1>Informacion sobre el producto </h1>
+
+	<!-CUATRO 1-->
+
+	<div>	
+		<fieldset>
+			<legend>Datos básicos</legend>
+
+			<!-INICIO DATOS BÁSICOS-->
+
+			<div>
+				<!- Nombre-->
+				<label for="Nombre">Nombre</label>
+				<br>
+				<input type="text" name="Nombre" id="Nombre" value="">
+				<br>
+				<br>
+			</div>
+		
+			<div>
+				<!-Descripción-->
+				<label for="Descripción">Descripción</label>
+				<br>
+				<textarea name="textarea" rows="4" id="Descripción"></textarea>
+				<br>
+				<br>
+			</div>
+		
+			<div>
+				<!-foto-->
+				<label for="Foto">Foto</label>
+				<input type="file" name="Foto" id="Foto">
+				<br>
+				<br>
+			</div>
+		
+			<div>
+				<!-visitas-->
+				<label for="visitas"></label>
+				<input type="radio" name="visitas" id="visitas" value="" ="visitas">
+			<label>Añadir contador de visitas</label>
+			</div>		
+		</fieldset>	
+
+		<!-FINAL DATOS BÁSICOS-->
+
+	</div>
+
+	<!-CUATRO 2-->
+
+	<div>
+		<br>
+		<fieldset>	
+
+			<!-INICIO DE DATOS ECONÓMICOS>
+			<legend>Datos económicos</legend>
+			
+			<div>
+				<!-precio-->
+				<label for="Precio">Precio</label>
+				<input type="text" name="Precio" value="" id="Precio">
+				<label> &#8364;</label>
+				
+				<!-impuestos-->
+				<label for="Impuestos" >Impuestos</label>
+				<select id="Impuestos">
+					<option value="4%">4%</option>
+					<option value="7%">7%</option>
+					<option value="16%">16%</option>
+					<option value="25%">25%</option>
+				</select>
+				<br>
+				<br>
+			</div>
+		
+			<div>
+				<!-promocion-->
+				<label for="Promoción">Promoción</label>
+				<br>
+				<input type="radio" name="Promoción" value="ninguno" >
+				<label>Ninguno</label>
+				<br>
+				<input type="radio" name="Promoción" value="transporte gratuito">
+				<label>Transporte gratuito</label>
+				<br>
+				<input type="radio" name="Promoción" value="descuento 5%">
+				<label>Descuento 5%</label>
+			</div>
+		</fieldset>
+		<br>
+		<input type="submit" name="Enviar" value="Enviar">
+
+		<!-FINAL DE DATOS ECONÓMICOS>
+
+	</div> 
+
+	
+	</form>
+</body>
+</html>
