@@ -2,108 +2,67 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Tarea 1</title>
+	<title>Tarea 2</title>
 </head>
 <body>
-
-	<form action="/email.php">
-	<h1>Informacion sobre el producto </h1>
-
-	<!--CUATRO 1-->
-
-	<div>	
-		<fieldset>
-			<legend>Datos básicos</legend>
-
-			<!--INICIO DATOS BÁSICOS-->
-
-			<div>
-				<!-- Nombre-->
-				<label for="Nombre">Nombre</label>
-				<br>
-				<input type="text" name="Nombre" id="Nombre" value="">
-				<br>
-				<br>
-			</div>
-		
-			<div>
-				<!--Descripción-->
-				<label for="Descripción">Descripción</label>
-				<br>
-				<textarea name="textarea" rows="4" id="Descripción"></textarea>
-				<br>
-				<br>
-			</div>
-		
-			<div>
-				<!--foto-->
-				<label for="Foto">Foto</label>
-				<input type="file" name="Foto" id="Foto">
-				<br>
-				<br>
-			</div>
-		
-			<div>
-				<!--visitas-->
-				<label for="visitas"></label>
-				<input type="radio" name="visitas" id="visitas" value="" ="visitas">
-			<label>Añadir contador de visitas</label>
-			</div>		
-		</fieldset>	
-
-		<!--FINAL DATOS BÁSICOS-->
-
-	</div>
-
-	<!--CUATRO 2-->
-
-	<div>
-		<br>
-		<fieldset>	
-
-			<!--INICIO DE DATOS ECONÓMICOS-->
-			<legend>Datos económicos</legend>
-			
-			<div>
-				<!--precio-->
-				<label for="Precio">Precio</label>
-				<input type="text" name="Precio" value="" id="Precio">
-				<label> &#8364;</label>
-				
-				<!--impuestos-->
-				<label for="Impuestos" >Impuestos</label>
-				<select id="Impuestos">
-					<option value="4%">4%</option>
-					<option value="7%">7%</option>
-					<option value="16%">16%</option>
-					<option value="25%">25%</option>
-				</select>
-				<br>
-				<br>
-			</div>
-		
-			<div>
-				<!--promocion-->
-				<label for="Promoción">Promoción</label>
-				<br>
-				<input type="radio" name="Promoción" value="ninguno" >
-				<label>Ninguno</label>
-				<br>
-				<input type="radio" name="Promoción" value="transporte gratuito">
-				<label>Transporte gratuito</label>
-				<br>
-				<input type="radio" name="Promoción" value="descuento 5%">
-				<label>Descuento 5%</label>
-			</div>
-		</fieldset>
-		<br>
-		<input type="submit" name="Enviar" value="Enviar">
-
-		<!--FINAL DE DATOS ECONÓMICOS-->
-
-	</div> 
-
-	
-	</form>
+	<h4>Análisis de ventas anuales</h4>
+	<table border="1">
+		<!--Encabezado-->
+		<tr>
+			<th rowspan="2">AÑO</th>
+			<th colspan="4">Expansión de ventas</th>
+		</tr>
+		<!--FILA 1-->
+		<tr>
+			<th>Producto A</th>
+			<th>Producto B</th>
+			<th>Producto C</th>
+			<th>Producto D</th>
+		</tr>
+		<!--FILA 2-->
+		<tr>
+			<th>N-3</th>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		<!--FILA 3-->
+		<tr>
+			<th>N-2</th>
+			<td>3</td>
+			<td>5</td>
+			<td>8</td>
+			<td>4</td>
+		</tr>
+		<!--FILA 4-->
+		<tr>
+			<th>N-1</th>
+			<td>4</td>
+			<td>4</td>
+			<td>7</td>
+			<td>3</td>
+		</tr>
+		<!--FILA 5-->
+		<tr>
+			<th>N</th>
+			<td>5</td>
+			<td>7</td>
+			<td>6</td>
+			<td>2</td>
+		</tr>
+		<!--FILA 6-->
+		<tr>
+			<th rowspan="2">AÑO</th>
+			<th colspan="4">Expansión de ventas</th>
+		</tr>
+		<!--FILA 7-->
+		<tr>
+			<th>Producto A</th>
+			<th>Producto B</th>
+			<th>Producto C</th>
+			<th>Producto D</th>
+		</tr>
+	</table>
 </body>
 </html>
